@@ -34,9 +34,10 @@ The command is used to start an activity within an Android application directly 
 ```bash
 adb shell am start <package-name/.activity-name>
 
-Example: Androgoat application
-package name = "owasp.sat.agoat" and activity = "AccessControl1ViewActivity" is set to exported=ture
-Ex: adb shell am start owasp.sat.agoat/.AccessControl1ViewActivity
+Example: Androgoat Vulnerable Application
+package name = "owasp.sat.agoat" and activity = "AccessControl1ViewActivity"
+
+adb shell am start owasp.sat.agoat/.AccessControl1ViewActivity
 ```
 
 It is used in Android development to copy files from an Android device to your computer.
@@ -102,10 +103,11 @@ objection patchapk --source example.apk
 - Frida Server and Frida Script
 - (Note: The Frida server must be located in `/data/local/tmp/`. Also, ensure to add the Burpsuite CA certificate in the tmp folder as `cert-der.crt`.)
 - Now, provide execute permissions to the Frida server and run the server.
+- Now, download the ssl bypass script from https://codeshare.frida.re/.
 - After running the Frida server, execute the following command.
 
 ```bash
-frida -U -f <package-name> -l frida-script.js
+frida -U -f <package-name> -l <path-of-frida-script.js>
 ```
 
 ### Method 3: Using Objection and Frida Server
