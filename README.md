@@ -133,5 +133,5 @@ objection --gadget <package-name> explore --startup-command "android sslpinning 
 
 ### Method 2: Using Frida Scripts
 
-A popular GitHub repository for Frida scripts related to root detection bypass is R0rt1z2/frida-scripts. This repository contains various scripts for bypassing root detection and other security mechanisms in Android applications.
-2. frida Scripts
+Download root detection bypass scripts from https://codeshare.frida.re/
+
