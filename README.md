@@ -1,5 +1,3 @@
-# Android-Penetration-Testing-Guide
-
 ![Android Pentest](img.png)
 
 ## Tools
