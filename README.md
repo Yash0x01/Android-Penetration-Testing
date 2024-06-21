@@ -105,11 +105,11 @@ objection patchapk --source example.apk
 - Frida Server and Frida Script
 - (Note: The Frida server must be located in `/data/local/tmp/`. Also, ensure to add the Burpsuite CA certificate in the tmp folder as `cert-der.crt`.)
 - Now, provide execute permissions to the Frida server and run the server.
-- Now, download the ssl bypass script from https://codeshare.frida.re/.
+- Download the ssl bypass script from https://codeshare.frida.re/.
 - After running the Frida server, execute the following command.
 
 ```bash
-frida -U -f <package-name> -l <path-of-frida-script.js>
+frida -U -f <package-name> -l </path/frida-script.js>
 ```
 
 ### Method 3: Using Objection and Frida Server
