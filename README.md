@@ -1,5 +1,3 @@
-![Android Pentest](img.png)
-
 ## Tools
 
 ```bash
